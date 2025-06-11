@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Get Exclusive News & Tips </title>
+  <style>
+
+    html{
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(180deg, #fff5b5 0%, #fffcd9 100%);
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    body{
+        padding: 10px;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(255, 193, 7, 0.08);
+      padding: 2rem 1.5rem;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffc107;
+      letter-spacing: 1px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #ffb300;
+    }
+
+     h2 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+        color: #ffb300;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+    form {
+      display: flex;
+      padding: 5px;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input[type="text"],
+    input[type="email"] {
+      padding: 0.75rem;
+      border: 1px solid #ffe082;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+      transition: border 0.2s;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus {
+      border-color: #ffc107;
+    }
+    button {
+      background: linear-gradient(90deg, #ffc107 60%, #fcd45e 100%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.85rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #ffd75e 60%, #ffc107 100%);
+    }
+    .privacy {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 1rem;
+    }
+    @media (max-width: 500px) {
+      .footer-content {
+        font-size: 0.5rem;
+      }
+    }
+
+    @media (max-width: 800px) {
+      section {
+        flex-direction: column !important;
+        align-items: center;
+        padding: 1rem;
+        width: 100%;
+      }
+      .side-image {
+        display: none !important;
+      }
+      .container {
+        max-width: 100%;
+        padding: 1.25rem 0.55rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        color: #ffb300;
+      }
+    }
+
+  </style>
+
+
+</head>
+<body>
+    <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.5rem; width: 100vw;">
+
+        <div style="text-align: center; margin-bottom: 1rem;">
+              <h2 style="font-weight: 800; margin-top:.15rem;">
+                    THE EARLY BIRD GETS THE BEST DEALS!!!
+                </h2>
+        </div>
+
+        <section style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%; ">
+
+
+            <div class="side-image">
+              
+                <img src="https://javierdzul.github.io/email-assets-WK/sunnynewz/businessman_posing_735_by_1173.png" alt="Businessman posing" style="width: auto; height: 100%; max-height: 600px; mask-image: linear-gradient( #000000  99%, transparent );">
+
+            </div>
+
+            <div class="container">
+                <div class="logo">
+                    <img src="https://javierdzul.github.io/email-assets-WK/sunnynewz/sunnynewz_logo_1536_by_699.png" alt="SunnyNewz Logo" style="width: 100%; height: auto; max-width: 240px;">
+                </div>
+                <h1>Sign Up for Exclusive Offers & News</h1>
+                <p>Join our newsletter to receive exclusive offers, promotions, tips, and updates straight to your inbox!</p>
+                <form>
+                    <input type="text" name="fullname" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <button type="submit">Subscribe Now</button>
+
+
+                    <div>
+
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <a href="Documents/SunnyNewz_T&C.pdf" target="_blank" style="color: #d4a001"> Terms &amp; Conditions</a>
+                    </div>
+                    
+
+                </form>
+                <div class="privacy">
+                    We respect your <a style="text-decoration: none; color: #888;" href="Documents/SunnyNewz_PrivacyPolicy.pdf" target="_blank">privacy</a> . Unsubscribe at any time.
+                </div>
+            </div>
+
+          
+
+        </section>
+        
+            
+        <footer >
+            <div style="width: 100%; max-width: 1000px; margin: 0 auto; padding-top: 1.5rem;">
+                <button id="footer-toggle" style="background: none; border: none; color: #ffb300; font-size: 1rem; cursor: pointer; margin: 0 auto; display: block; padding: 0.5rem 0;">
+                Show Legal & Privacy Info ▼
+                </button>
+                <div id="footer-content" style="font-size: 10px; display: flex; flex-direction: column; justify-content: center; align-content: center; text-align: center; max-height: 0; overflow: hidden; transition: max-height 0.5s ease;">
+                    <h3>SunnyNewz 2025 All Rights Reserved | Complied with GDPR rules and regulation | 
+                        <a href="Documents/SunnyNewz_T&C.pdf" target="_blank"> Terms &amp; Conditions</a>
+                    </h3>
+                    <p>
+                        SunnyNewz is available only to persons older than 21 years of age, or the legal age of majority in their jurisdiction, whichever is greater. You will be responsible for ensuring that you do not violate any laws of your jurisdiction, including but not limited to copyright laws.
+                        Individuals that register their personal details with SunnyNewz agree to receive newsletters and bonus offers, including but not limited to gambling-related newsletters. SunnyNewz contains third-party content about, and links to, third parties and their websites that are not owned or controlled by SunnyNewz. 
+                        SunnyNewz deoes not accept wager of any kind, and does not endorse any activity that is illegal in the jurisdiction of the user and or results in financial loss to the user.
+                        SunnyNewz accepts not liability for any loss or damage that may be incurred by you as a result of your use of the site, including but not limited to money loesses, and by using this website and its services you agree that this shall be done at your own risk.
+                        SunnyNewz has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party content or websites or any of their contents.
+                        SunnyNewz has a strong stand against spamming. Click here to read our
+                        <a href="Documents/SunnyNewz_PrivacyPolicy.pdf" target="_blank">Privacy Policy.</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+            const toggleBtn = document.getElementById('footer-toggle');
+            const footerContent = document.getElementById('footer-content');
+            let expanded = false;
+            toggleBtn.addEventListener('click', function() {
+                expanded = !expanded;
+                if (expanded) {
+                footerContent.style.maxHeight = " 35vh "; // Adjust height as needed
+                toggleBtn.innerHTML = 'Hide Legal & Privacy Info ▲';
+                } else {
+                footerContent.style.maxHeight = "0";
+                toggleBtn.innerHTML = 'Show Legal & Privacy Info ▼';
+                }
+            });
+        </script>
+            
+    </main>
+</body>
+        
+        
+</html>
